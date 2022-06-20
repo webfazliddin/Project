@@ -48,24 +48,74 @@
 
 .NavLinkItem {
     display: flex;
+    padding-right: 24px;
+    padding-top: 30px;
 }
-.UserAvatar{
+
+.NavLinkItem li {
+    padding-right: 27px;
+}
+
+.LinkChiziq:before {
+    content: '';
+    height: 32px;
+    border: 1px solid #EDEEF2;
+    margin-right: 20px;
+    /* flex: none;
+    order: 1;
+    flex-grow: 0; */
+}
+.NavLinkItem li a{
+    font-family: Nunito;
+    font-style: 14px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+}
+.NavLinkItem li a:hover {
+    color: #051ad6;
+    transition: .5s;
+}
+
+.UserAvatar {
     border: 2px solid #EDEEF2;
     width: 50px;
     height: 50px;
     border-radius: 16px;
     margin-right: 164px;
+    margin-top: 15px;
 }
+
 .NavLink .MenuImg {
     height: 45px;
     border-radius: 15px;
+    cursor: pointer;
 }
-.MenuAdded{
+
+.MenuAdded {
+    position: relative;
     width: 48px;
     height: 48px;
     background-color: #F3F4FF;
+    margin-right: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 16px;
 }
-.NavLink .fa-box{
-    font-size: 30px;
-    color: #4E60FF;
+
+.MenuAdded img {
+    padding: 15px;
+}
+
+.Menuadded4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -6px;
+    margin-top: -7px;
+    background-color: #4E60FF;
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
 }
