@@ -1,121 +1,92 @@
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+/* Nunito font regular */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+/* Nunito font bold */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --primary: #4E60FF;
+    --primary-light: #F3F4FF;    
+    --white: #fff;
+    --dark: #2B2B43;
+    --grey: #83859C;
+    --grey-light: #C7C8D2;
+    --grey-lightest: #EDEEF2;
+    --error: #FF5C60;
+
+    --breakpoint-mobile: 768px;
+    --breakpoint-desktop: 1110px;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--breakpoint-desktop);
+}
+
+.header__menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary-light);
+}
+
+.header__menu--left-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__menu--logo {
+    width: 79px;
+    height: 40px;
+}
+
+.header__menu--search {
+    position: relative;
+    margin-left: 48px;
+}
+
+.header__menu--search-input {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: var(--grey-lightest);
+    padding: 10px 12px;
+    padding-right: calc((12px * 2) + 16px);
+    border-radius: 12px;
+    border: none;
+    outline-color: var(--primary);
+    height: 40px;
+    min-width: 224px;
     box-sizing: border-box;
 }
 
-.Wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar {
-    display: flex;
-}
-
-.NavLink {
-    display: flex;
-}
-
-.logo h2 {
-    color: #2B2B43;
-    font-family: sans-serif;
-    width: 79px;
-    padding: 20px 165px;
-}
-
-.logo h2 span {
-    color: #4E60FF;
-}
-
-.MenuSearch .MenuSearchInput {
-    width: 224px;
-    height: 40px;
-    padding: 10px;
-    background: #EDEEF2;
-    border: none;
-    border-radius: 12px;
-    margin-top: 20px;
-}
-
-.MenuSearch .fa-magnifying-glass {
-    margin-left: -30px;
-    cursor: pointer;
-    color: #83859C;
-}
-
-.NavLinkItem {
-    display: flex;
-    padding-right: 24px;
-    padding-top: 30px;
-}
-
-.NavLinkItem li {
-    padding-right: 27px;
-}
-
-.LinkChiziq:before {
-    content: '';
-    height: 32px;
-    border: 1px solid #EDEEF2;
-    margin-right: 20px;
-    /* flex: none;
-    order: 1;
-    flex-grow: 0; */
-}
-.NavLinkItem li a{
-    font-family: Nunito;
-    font-style: 14px;
-    font-weight: 400;
-    letter-spacing: 0.9px;
-}
-.NavLinkItem li a:hover {
-    color: #051ad6;
-    transition: .5s;
-}
-
-.UserAvatar {
-    border: 2px solid #EDEEF2;
-    width: 50px;
-    height: 50px;
-    border-radius: 16px;
-    margin-right: 164px;
-    margin-top: 15px;
-}
-
-.NavLink .MenuImg {
-    height: 45px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.MenuAdded {
-    position: relative;
-    width: 48px;
-    height: 48px;
-    background-color: #F3F4FF;
-    margin-right: 12px;
-    border-radius: 16px;
-    cursor: pointer;
-    margin-top: 16px;
-}
-
-.MenuAdded img {
-    padding: 15px;
-}
-
-.Menuadded4 {
+.header__menu--search-icon {
     position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: -6px;
-    margin-top: -7px;
-    background-color: #4E60FF;
-    width: 20px;
-    height: 20px;
-    border-radius: 8px;
-    color: #fff;
-    text-align: center;
+    color: var(--grey);
+    width: 16px;
+    height: 16px;
+    top: calc((40px - 16px) / 2);
+    right: calc((40px - 16px) / 2);
+}
+
+.header__menu--right-side {
+    
+}
+
+/* Here you can define styles how to change on mobile  */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header__menu--search {
+        display: none;
+    }
 }
