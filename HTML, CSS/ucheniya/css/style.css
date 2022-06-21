@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(197, 196, 195);
+}
+
+.df {
+    color: rgb(124, 233, 233);
+    margin: 20px 45px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.button {
+    margin: 100px 200px;
+}
+
+.btn {
+    padding: 8px 25px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+
+    border-radius: 5px;
+
+    border: 2px solid rgb(62, 138, 112);;
+
+    background-color: rgb(45, 235, 171);
+
+    transition: background .2s linear, color .4s linear;
+}
+
+.btn:hover{
+    background-color: rgb(62, 138, 112);
+    color: #fff;
+
+    border: 2px solid rgb(120, 192, 173);;
+}

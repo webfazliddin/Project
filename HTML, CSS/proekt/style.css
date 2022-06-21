@@ -1,0 +1,174 @@
+body, h1, h2, h3, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #353535;
+    border-bottom: 4px solid coral;
+}
+
+#header h1 {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+#header.logo {
+    color:coral;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar  li {
+    display: inline;
+}
+
+.navbar li a   {
+    text-decoration: none;
+    color:#fff;
+    font-family: sans-serif;
+    padding: 25px 10px;
+    display: inline-block;
+}
+
+.navbar li a:hover {
+    color:coral;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    color:#fff;
+}
+
+#banner {
+    height: 70vh; 
+    background-image: url(main.jpg);
+    background-size: cover;
+    background-position: center -200px;
+    color:#fff;
+    font-family: sans-serif;
+}
+
+#banner h2 {
+    font-size: 56px;
+    margin-bottom: 25px;
+    padding-top:150px;
+    text-align: center;
+    color: #fff;
+}
+
+#newsletter {
+    background-color: #353535;
+    color:#fff;
+    font-family: sans-serif;
+    padding:20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#newsletter .left {
+    float: left;
+}
+
+#newsletter .right {
+    float: right;
+}
+
+#newsletter input{
+    padding:8px 15px;
+}
+
+.button{
+    background-color: coral;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.button:hover{
+    background-color: rgb(233, 229, 229);
+    color:#353535;
+}
+
+#courses {
+    padding: 30px 0;
+}
+
+.box {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.box img {
+    max-width: 100%;
+    width: 120px;
+}
+
+.clr {
+    clear: both;
+}
+
+#footer {
+    padding:50px 0;
+    text-align: center;
+    background-color:coral;
+    color:#fff;
+    font-size: 15px;
+    margin-top: 30px;
+    font-family:sans-serif;
+}
+
+.main-content {
+    width: 65%;
+    float: left;
+}
+
+.sidebar {
+    width: 30%;
+    float: right;
+}
+
+#about-us {
+    margin: 40px 0;
+    font-family: sans-serif;
+}
+
+.bg-dark {
+    background-color: #353535;
+    color: #fff;
+    padding: 15px;
+}
+
+.services-box {
+    background-color: #cec8c8;
+    margin: 15px 0px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+#services {
+    margin: 35px 0px;
+    padding: 50px;
+}
+
+label {
+    display: block;
+    margin: 10px 0; 
+}
+
+form-input, textarea {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.active {
+    color: coral ! important;
+}

@@ -1,0 +1,52 @@
+
+body {
+    background-color: #000000;
+}
+
+.tabs {
+    margin: 50px auto 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.tabs_nav {
+    display: flex;
+}
+
+.tabs_nav-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+
+    background-color: #f5f5f5;
+    border: 0;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.tabs_nav-btn:last-child {
+    border-right: 0;
+}
+
+.tabs_nav-btn:hover {
+    background-color: #ddd;
+}
+
+.tabs_nav-btn.active {
+    background-color: #5e3ddf;
+    border-right: #5e3ddf;
+    color: #fff;
+}
+
+.tabs_content {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.tabs_item {
+    display: none;
+}
+
+.tabs_item.active {
+    display: block;
+}
+
