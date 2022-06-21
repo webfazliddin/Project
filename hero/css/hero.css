@@ -38,7 +38,7 @@
 
 /*HERO*/
 .hero {
-    max-width: 1110px;
+    max-width: var(--breakpoint-desktop)
     width: 100%;
     margin: 0 auto;
 }
@@ -47,10 +47,11 @@
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
+    /* grid-row-gap: 15px;
+    grid-column-gap: 15px; */
 }
 
 .hero_item {
@@ -100,15 +101,15 @@ a {
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 15px;
-        /* background-color: #FF5C60; */
     } 
 
     .hero_inner {
         margin: 0 auto;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
+        
     }
 
     .hero_item {
