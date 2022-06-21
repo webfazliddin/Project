@@ -16,32 +16,33 @@
 
 /* Container*/
 .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--breakpoint-desktop);
+}
+
+/*HERO*/
+.hero {
     max-width: 1110px;
     width: 100%;
     margin: 0 auto;
 }
 
-/*HERO*/
-.hero {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .hero_inner {
+    margin: 0 auto;
+    width: 100%;
     box-sizing: border-box;
     /* display: flex; */
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
 }
 
 .hero_item {
-    margin: 0 15px;
-    width: 160px;
     height: 80px;
     border: 1px solid #EDEEF2;
     border-radius: 16px;
-    box-shadow:  0 0  1px rgba(0, 0, 0, 0.5);
+    /* box-shadow:  0 0  1px rgba(0, 0, 0, 0.5); */
     background: #FFFFFF;
 
     text-align: center;
@@ -64,12 +65,12 @@
     font-style: 13px;
     font-weight: 700;
     color: #545563;
-    font-family: 'Nunito';
+    font-family: 'Nunito',sans-serif;
     font-style: normal;
     line-height: 18px;
     letter-spacing: 0.1px;
 
-    transition: color 1s linear;
+    /* transition: color 1s linear; */
 }
 
 .hero_name:hover {
