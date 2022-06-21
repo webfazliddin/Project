@@ -6,7 +6,7 @@
 
 :root {
     --primary: #4E60FF;
-    --primary-light: #F3F4FF;    
+    --primary-light: #F3F4FF;
     --white: #fff;
     --dark: #2B2B43;
     --grey: #83859C;
@@ -76,8 +76,75 @@
     right: calc((40px - 16px) / 2);
 }
 
+/*  Here you can define styles how to create menu right side  */
+
 .header__menu--right-side {
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__menu--link {
+    display: flex;
+}
+
+.header__menu--link li {
+    list-style: none;
+    margin: 0 28px;
+}
+
+.header__menu--link li a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark);
+}
+
+.header__menu--link li a:hover {
+    color: var(--primary);
+    transition: .5s;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu--link-before {
+    border-right: 1px solid var(--grey-lightest);
+    height: 32px;
+    margin-top: -6px;
+}
+
+.header__menu--icon {
+    position: relative;
+    margin-right: 12px;
+}
+
+.header__menu--icon-item {
+    background: var(--primary-light);
+    padding: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.header__menu--icon-number {
+    position: absolute;
+    background: #4E60FF;
+    border-radius: 8px;
+    padding: 2px 6px;
+    color: var(--white);
+    right: -6px;
+    top: -6px;
+}
+
+.header__menu--useravatar {
+    border: 2px solid #EDEEF2;
+    border-radius: 16px;
+    padding: 2px;
+    cursor: pointer;
 }
 
 /* Here you can define styles how to change on mobile  */
