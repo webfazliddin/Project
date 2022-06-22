@@ -18,6 +18,12 @@
     --breakpoint-desktop: 1110px;
 }
 
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 
 .container {
     width: 100%;
@@ -114,6 +120,17 @@
     height: 32px;
     margin-top: -6px;
 }
+
+/* .active::before{
+    content: "";
+    display: inline;
+    width: 0;
+    border-left: 1px solid var(--grey-lightest);
+    min-height: 40px;
+    margin: 0 20px 0 -35px;
+    
+    background-color: #fff;
+} */
 
 .header__menu--icon {
     position: relative;
