@@ -156,4 +156,11 @@
     .header__menu--search {
         display: none;
     }
+    .header__menu--logo{
+        padding-left: 15px;
+    }
+    .header__menu--link{
+        display: none;
+    }
+    
 }
