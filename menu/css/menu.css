@@ -88,21 +88,18 @@
     display: flex;
 }
 
-.header__menu--link li {
-    list-style: none;
-    margin: 0 28px;
-}
-
-.header__menu--link li a {
+.menu_link {
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     color: var(--dark);
+    list-style: none;
+    margin: 0 28px;
 }
 
-.header__menu--link li a:hover {
+.menu_link:hover {
     color: var(--primary);
     transition: .5s;
 }
@@ -124,7 +121,7 @@
 }
 
 .header__menu--icon-item {
-    background: var(--primary-light);
+    background-color: var(--primary-light);
     padding: 16px;
     border-radius: 16px;
     cursor: pointer;
@@ -132,7 +129,7 @@
 
 .header__menu--icon-number {
     position: absolute;
-    background: #4E60FF;
+    background-color: #4E60FF;
     border-radius: 8px;
     padding: 2px 6px;
     color: var(--white);
