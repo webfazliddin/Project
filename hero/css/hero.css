@@ -38,7 +38,7 @@
 
 /*HERO*/
 .hero {
-    max-width: var(--breakpoint-desktop)
+    max-width: var(--breakpoint-desktop);
     width: 100%;
     margin: 0 auto;
 }

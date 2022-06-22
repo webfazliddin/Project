@@ -104,7 +104,7 @@
     transition: .5s;
 }
 
-.header__navbar{
+.header__navbar {
     display: flex;
     justify-content: space-between;
 }
@@ -144,6 +144,10 @@
     cursor: pointer;
 }
 
+.header__menu--icon-mobile {
+    display: none;
+}
+
 /* Here you can define styles how to change on mobile  */
 @media screen and (max-width: 768px) {
     .container {
@@ -153,11 +157,48 @@
     .header__menu--search {
         display: none;
     }
-    .header__menu--logo{
+
+    .header__menu--logo {
         padding-left: 15px;
     }
-    .header__menu--link{
+
+    .header__menu--link {
         display: none;
     }
-    
+
+    .header__navbar {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header__menu--icon {
+        margin-left: 59px;
+    }
+
+    .header__menu--useravatar {
+        border: 2px solid var(--primary);
+        margin-left: 12px;
+    }
+
+    .header__menu--useravatar-before {
+        margin-left: 19px;
+        border: 1px solid var(--grey-lightest);
+        height: 32px;
+        color: var(--grey);
+    }
+
+    .header__menu--icon-mobile {
+        display: block;
+        background: #EDEEF2;
+        border-radius: 16px;
+        padding: 14px;
+        margin-left: 16px;
+        cursor: pointer;
+        border: 1px solid var(--white);
+    }
+
+    .header__menu--icon-mobile:hover {
+        border: 1px solid var(--primary);
+    }
+
 }
