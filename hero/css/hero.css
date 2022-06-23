@@ -75,9 +75,9 @@
     height: 24px;
 }
 
-a:visited {
+/* a:visited {
     color: var(--black);
-}
+} */
 
 a {
     text-decoration: none;
@@ -104,15 +104,11 @@ a {
     } 
 
     .hero_inner {
-        display: grid;
-        box-sizing: border-box;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .hero_item {
-        height: 80px;
-        width: 100px;
-        margin: 0 auto;
+        width: 28%;
     }
 }
