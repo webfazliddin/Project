@@ -121,17 +121,6 @@
     margin-top: -6px;
 }
 
-/* .active::before{
-    content: "";
-    display: inline;
-    width: 0;
-    border-left: 1px solid var(--grey-lightest);
-    min-height: 40px;
-    margin: 0 20px 0 -35px;
-    
-    background-color: #fff;
-} */
-
 .header__menu--icon {
     position: relative;
     margin-right: 12px;
@@ -141,7 +130,6 @@
     background-color: var(--primary-light);
     padding: 16px;
     border-radius: 16px;
-    cursor: pointer;
 }
 
 .header__menu--icon-number {
@@ -158,7 +146,6 @@
     border: 2px solid #EDEEF2;
     border-radius: 16px;
     padding: 2px;
-    cursor: pointer;
 }
 
 .header__menu--icon-mobile {
